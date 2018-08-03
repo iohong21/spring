@@ -1,0 +1,112 @@
+#refrigeratorRef{
+	margin-top: 154px;
+}
+#refrigerator{
+	/*margin-top: 154px;*/
+	height: 680px;
+	background-color: skyblue;
+	background-image: url("../images/rg3.png");
+	opacity: 0.85;
+	background-repeat: no-repeat;
+}
+#phone{
+	/*margin-top: 154px;*/
+	height: 680px;
+	background-color: red;
+	background-image: url("../images/s9.png");
+	opacity: 0.85;
+	background-repeat: no-repeat;
+}
+#computer{
+	/*margin-top: 154px;*/
+	height: 680px;
+	background-color: gray;
+	background-image: url("../images/tv1.png");
+	opacity: 0.85;
+	background-repeat: no-repeat;
+}
+#audio{
+	/*margin-top: 154px;*/
+	height: 680px;
+	background-color: purple;
+	background-image: url("../images/au1.png");
+	opacity: 0.85;
+	background-repeat: no-repeat;
+}
+#memory{
+	/*margin-top: 154px;*/
+	height: 680px;
+	background-color: brown;
+	background-image: url("../images/me1.png");
+	opacity: 0.85;
+	background-repeat: no-repeat;
+}
+
+#mainBottom, #mainBottom2{
+	background-color: #eee;
+}
+ul li{
+	list-style-type: none;
+}
+.panel ul li a{
+	text-decoration: none;
+	color:gray;
+	margin-left: 20px;
+	border: none;
+}
+.panel ul a:hover{
+	text-decoration: underline;
+	color:gray;
+}
+.productSubItem1-1{
+	float: left;
+	width: 60%;
+	/*border: 1px solid green;*/
+}
+.productSubItem1-2{
+	margin-top:110px; 
+	display: inline-block; 
+	width: 40%;
+	/*border: 1px solid green; */
+	font-color: white;
+}
+.productSubItem2-1{
+	float: left;
+	width: 60%; 
+	/*border: 1px solid green;*/
+}
+.productSubItem2-2{
+	display: inline-block; 
+	margin-left: 1100px; 
+	margin-top: 50px;
+}
+#phone_detail{
+	border-radius: 50px; 
+	display: inline-block; 
+	width: 200px;
+	height: 50px; 
+	border: 1px solid white; 
+	margin: 0px auto;
+	padding: 18px 60px; 
+	text-decoration: none; 
+	color:white;
+}
+#phone_detail:hover{
+	color: green;
+
+}
+#phone_detail_1{
+	border-radius: 50px; 
+	display: inline-block; 
+	width: 200px;
+	height: 50px; 
+	border: 1px solid black; 
+	margin: 0px auto;
+	padding: 18px 60px; 
+	text-decoration: none; 
+	color:black;
+}
+#phone_detail_1:hover{
+	color: red;
+
+}
