@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title></title>
+<title>views/member/insertform.jsp</title>
 </head>
 <body>
 <h3>회원 정보 추가 폼입니다.</h3>

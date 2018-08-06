@@ -17,15 +17,6 @@ public class MemberServiceImpl implements MemberService {
 	// 의존 객체 주입
 	@Autowired
 	private MemberDao dao;
-	
-	@Override
-	public void list(ModelAndView mView) {
-		// Dao 객체를 이용해서 회원 목록을 얻어오고
-		List<MemberDto> list = dao.getList();
-		
-		// 인자로 전달된 ModelAndView 객체에 담는다.
-		mView.addObject("list", list);
-	}
 
 	@Override
 	public void insert(MemberDto dto) {
@@ -47,4 +38,12 @@ public class MemberServiceImpl implements MemberService {
 		mView.addObject("dto", dao.getData(num));
 	}
 
+	@Override
+	public void list(ModelAndView mView) {
+		// Dao 객체를 이용해서 회원 목록을 얻어오고
+		List<MemberDto> list = dao.getList();
+		
+		// 인자로 전달된 ModelAndView 객체에 담는다.
+		mView.addObject("list", list);
+	}	
 }

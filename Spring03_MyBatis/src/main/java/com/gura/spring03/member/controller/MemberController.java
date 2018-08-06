@@ -1,7 +1,5 @@
 package com.gura.spring03.member.controller;
 
-import javax.servlet.http.HttpServletRequest;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -12,16 +10,20 @@ import org.springframework.web.servlet.ModelAndView;
 import com.gura.spring03.member.dto.MemberDto;
 import com.gura.spring03.member.service.MemberService;
 
+/*
+ * 요청에 따른 서비스처리(비즈니스로직)하고 필요한 곳으로 이동(.jsp)
+ */
 @Controller
 public class MemberController {
 	@Autowired
 	private MemberService mService;
 	
+	// 회원 목록 요청 처리
 	@RequestMapping("/member/list")
 	public ModelAndView list() {
 		ModelAndView mView = new ModelAndView();
 		
-		// MemberService 객체를 이용해서 비즈니스 로직 ㅓㅊ리하고
+		// MemberService 객체를 이용해서 비즈니스 로직 처리하고
 		mService.list(mView);
 		
 		// 뷰 페이지의 정보 설정
@@ -71,7 +73,8 @@ public class MemberController {
 		 */
 		mService.insert(dto);
 		
-		return "redirect:/member/list.do";
+		//return "redirect:/member/list.do";
+		return "member/insert";
 	}
 	
 	@RequestMapping("/member/delete")
@@ -81,7 +84,7 @@ public class MemberController {
 	}
 	
 	@RequestMapping("/member/updateform")
-	public ModelAndView updateform(@RequestParam int num) {
+	public ModelAndView updateform(@RequestParam("1") int num) {
 		ModelAndView mView = new ModelAndView();
 		mService.getData(mView, num);
 		mView.setViewName("member/updateform");
@@ -91,9 +94,6 @@ public class MemberController {
 	
 	@RequestMapping("/member/update")
 	public String update(@ModelAttribute MemberDto dto) {
-		System.out.println("num: " + dto.getNum());
-		System.out.println("name: " + dto.getName());
-		System.out.println("addr: " + dto.getAddr());
 		mService.update(dto);
 		return "redirect:/member/list.do";
 	}
