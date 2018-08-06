@@ -6,7 +6,7 @@
 <head>
 <meta charset="UTF-8">
 <title>member/updateform.jsp</title>
-<style src="${pageContext.request.contextPath }/resources/css/bootstrap.css"></style>
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/bootstrap.css" />
 </head>
 <body>
 	<div class="container">
