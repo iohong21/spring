@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+		.frame{
+			width: 750px;
+			height: 500px;
+			position: relative;
+			z-index: 0;
+		}
+		#myCanvas{
+			position: absolute;
+			top: 58px;
+			left: 68px;
+			border: 1px solid black;
+			z-index: 5;
+		}
+		#btnBox{
+			position: absolute;
+			top: 445px;
+			left: 300px;
+			border: 1px solid black;
+			z-index: 5;
+		}
+		#rangeBox{
+			position: absolute;
+			top: 452px;
+			left: 70px;
+			/*border: 1px solid black;*/
+			z-index: 5;
+		}
+		#rangeSubBox{
+			position: absolute;
+			top: 455px;
+			left: 255px;
+			/*border: 1px solid black;*/
+			z-index: 5;
+		}
+		#colorBox{
+			position: absolute;
+			top: 450px;
+			left: 620px;
+			/*border: 1px solid black;*/
+			z-index: 5;
+		}

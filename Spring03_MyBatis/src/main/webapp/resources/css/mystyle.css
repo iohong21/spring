@@ -1,0 +1,65 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form
+,fieldset,legend,textarea,p,blockquote,th,td,input,select,button{margin:0;padding:0}
+fieldset,img,button,input{border:0 none}
+dl,ul,ol,menu,li{list-style:none;}
+a:hover{text-decoration:none;}
+
+/*sub_Nav*/
+.sub_Nav{width: 100%;height: 110px;background-color: #141414; opacity: 0.9; margin-top:44px;}
+
+/*sub_Nav_control*/
+.sub_Nav_control{margin-left:37%}
+
+/*sub_Nav_핸드폰*/
+.sub_Nav_cell{width:400px;height:110px;background-color: #141414;}
+.sub_Nav_cell ul{overflow:none;}
+.sub_Nav_cell ul li{float:left; width:100px;text-align:center;margin-top:37px;}
+.sub_Nav_cell ul li a{color:#fff;}
+.sub_Nav_cell ul li a:hover{color:#0070c9;}
+.sub_Nav_cell ul li a img{width:40px;height: 40px;}
+.sub_Nav_cell ul li a span{display:block;font-size:11px; padding-top:5px;}
+
+/*sub_Nav_티비*/
+.sub_Nav_TV{width:400px;height:110px;background-color: #141414;display:none;}
+.sub_Nav_TV ul{overflow:none;}
+.sub_Nav_TV ul li{float:left; width:100px;text-align:center;margin-top:37px;}
+.sub_Nav_TV ul li a{color:#fff;}
+.sub_Nav_TV ul li a:hover{color:#0070c9;}
+.sub_Nav_TV ul li a img{width:60px;height: 40px;}
+.sub_Nav_TV ul li a span{display:block;font-size:11px;padding-top:5px;}
+
+/*sub_Nav_Appliance*/
+.sub_Nav_Appliance{width:400px;height:110px;background-color: #141414;display:none;}
+.sub_Nav_Appliance ul{overflow:none;}
+.sub_Nav_Appliance ul li{float:left; width:100px;text-align:center;margin-top:37px;}
+.sub_Nav_Appliance ul li a{color:#fff;}
+.sub_Nav_Appliance ul li a:hover{color:#0070c9;}
+.sub_Nav_Appliance ul li a img{width:40px;height: 40px;}
+.sub_Nav_Appliance ul li a span{display:block;font-size:11px;padding-top:5px;}
+.sub_Nav_Appliance .adjustSize{margin-top:24px;}
+.sub_Nav_Appliance .adjustSize img{width:70px;height: 58px;}
+.sub_Nav_Appliance .adjustSize span{padding:0;}
+
+/*sub_Nav_IT*/
+.sub_Nav_IT{width:400px;height:110px;background-color: #141414;display:none;}
+.sub_Nav_IT ul{overflow:none;}
+.sub_Nav_IT ul li{float:left; width:100px;text-align:center;margin-top:37px;}
+.sub_Nav_IT ul li a{color:#fff;}
+.sub_Nav_IT ul li a:hover{color:#0070c9;}
+.sub_Nav_IT ul li a img{width:40px;height: 40px;}
+.sub_Nav_IT ul li a span{display:block;font-size:11px;padding-top:5px;}
+
+/*sub_Nav_Sound*/
+.sub_Nav_Sound{width:400px;height:110px;background-color: #141414;display:none;}
+.sub_Nav_Sound ul{overflow:none;}
+.sub_Nav_Sound ul li{float:left; width:100px;text-align:center;margin-top:37px;}
+.sub_Nav_Sound ul li a{color:#fff;}
+.sub_Nav_Sound ul li a:hover{color:#0070c9;}
+.sub_Nav_Sound ul li a img{width:40px;height: 40px;}
+.sub_Nav_Sound ul li a span{display:block;font-size:11px;padding-top:5px;}
+.sub_Nav_Sound .adjustSize{margin-top:38px;}
+.sub_Nav_Sound .adjustSize img{width:50px;height: 40px;}
+.sub_Nav_Sound .adjustSize span{padding-top:4px;}
+.sub_Nav_Sound .readjustSize{margin-top:28px;}
+.sub_Nav_Sound .readjustSize img{width:100px;height: 50px;}
+.sub_Nav_Sound .readjustSize span{padding-top:4px;}

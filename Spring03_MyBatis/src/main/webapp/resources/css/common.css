@@ -1,0 +1,38 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #000;
+}
+.mainMenu{
+	background-color: black;
+	overflow: auto;
+	width: 100%;
+	height: 44px;
+	border: 1px solid green;
+}
+.iconMenu{
+  background-color: green;
+  width: 100%;
+  height: 44px;
+  text-align: center;
+}		
+.mainMenu .menuBox{
+	list-style-type: none;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	border: 1px solid red;
+}
+.menuBox li{
+	display: inline;
+}
+.mainMenu .menuBox li a{
+	text-decoration: none;
+	display: inline-block;
+	padding: 10px 10px;
+	color: gray;
+}

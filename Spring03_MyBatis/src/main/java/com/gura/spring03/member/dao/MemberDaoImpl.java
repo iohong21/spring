@@ -1,6 +1,5 @@
 package com.gura.spring03.member.dao;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.ibatis.session.SqlSession;
@@ -12,36 +11,32 @@ import com.gura.spring03.member.dto.MemberDto;
 @Repository
 public class MemberDaoImpl implements MemberDao{
 
+	// 의존객체 자동 주입(Dependency Injection) 
 	@Autowired
 	private SqlSession session;
 	
 	@Override
 	public void insert(MemberDto dto) {
-		// TODO Auto-generated method stub
-		
+		session.insert("member.insert", dto);
 	}
 
 	@Override
 	public void update(MemberDto dto) {
-		// TODO Auto-generated method stub
-		
+		session.update("member.update", dto);
 	}
 
 	@Override
 	public void delete(int num) {
-		// TODO Auto-generated method stub
-		
+		session.delete("member.delete", num);
 	}
 
 	@Override
 	public MemberDto getData(int num) {
-		return session.selectOne("member.getData", 1);
+		return session.selectOne("member.getData", num);
 	}
 
 	@Override
 	public List<MemberDto> getList() {
-		//List<MemberDto> list = session.selectList("member.getList");
-		//return list;
 		return session.selectList("member.getList");
 	}
 }
