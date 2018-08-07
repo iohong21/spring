@@ -4,22 +4,47 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <meta charset="UTF-8">
-  <title>회원 로그인</title>
-  <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/bootstrap.css" />
+	  <meta charset="UTF-8">
+	  <title>회원 로그인</title>
+	  <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/bootstrap.css" />
   </head>
   <body>
 		<div class="container">
-			<h3>회원 로그인</h3>
-			<form action="login.do" method="post" id="loginForm">
-				<label for="id">사용자 ID: </label>
-				<input type="text" name="id" id="id" />
+			<div class="panel panel-primary text-center">
+				<div class="panel-heading">
+					<h3>회원 로그인</h3>
+				</div>
 				<br />
-				<label for="pwd">비밀번호: </label>
-				<input type="password" name="pwd" id="pwd" />
+				<div class="panel-body">
+					<form action="login.do?url=${url }" method="post" id="loginForm">
+						<div class="form-group-row">
+							<label for="id" class="col-sm-2 col-form-label">사용자 ID: </label>
+							<div class="col-sm-10">
+								<input type="text" name="id" id="id" class="form-control" />
+							</div>
+						</div>
+						<div class="form-group-row">
+							<label>&nbsp;</label>
+						</div>
+						<div class="form-group-row">
+							<label for="pwd" class="col-sm-2 col-form-label">비밀번호: </label>
+							<div class="col-sm-10">
+								<input type="password" name="pwd" id="pwd" class="form-control" />
+							</div>
+						</div>
+						<div class="form-group-row">
+							<label>&nbsp;</label>
+						</div>
+						<div class="form-group-row">
+							<div class="col-sm-10">
+								<button type="submit" class="btn btn-default">로그인</button>
+							</div>
+						</div>
+					</form>
+				</div>
 				<br />
-				<button type="submit">로그인</button>
-			</form>
+			</div>
+			<p id="info"></p>
 		</div>
   </body>
 </html>

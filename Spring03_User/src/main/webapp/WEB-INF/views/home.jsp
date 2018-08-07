@@ -15,12 +15,12 @@
 				<c:choose>
 					<c:when test="${empty id }">
 						<li><a href="users/loginform.do">로그인</a></li>
+						<li><a href="users/insertform.do">회원가입</a></li>
 					</c:when>
 					<c:otherwise>
-						<p><stirng>${id }</stirng> 님 로그인중</p>
+						<p><strong>${id }</strong> 님 로그인중<a href="users/logout.do">&nbsp;&nbsp;로그아웃</a></p>
 					</c:otherwise>
 				</c:choose>
-				<li><a href="users/insertform.do">회원 추가</a></li>
 				<li><a href="users/list.do">회원 목록</a></li>
 			</ul>
 		</div>
