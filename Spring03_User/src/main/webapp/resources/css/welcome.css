@@ -1,0 +1,52 @@
+.welcome{
+	margin-top: 50px;
+	width: 100%;
+	color: white;
+	font-size: 50px;
+	text-shadow: gray 2px 2px;
+	text-align: center;
+}	
+.samsung{
+	color: white;
+	font-size: 70px;
+	text-shadow: gray 2px 2px;
+	text-align: center;
+}	
+.circleBox{
+	width: 100%;
+	text-align: center;
+	/*border: 1px solid red;*/
+}
+#circle1, #circle2, #circle3{
+	display: inline-block;
+	text-align: center;
+	width: 10px;
+	height: 10px;
+	margin: 0 2px;
+	background-color: #fff;
+	border: 1px solid black;
+	border-radius: 50px;
+}
+
+.growDownCircle{
+	animation-name: growAni;
+	animation-duration: 0.2s;
+	animation-iteration-count: 2;
+	animation-direction: alternate;
+}
+.growCircle{
+	animation-name: growAni;
+	animation-duration: 0.5s;
+	animation-iteration-count: 1;
+	animation-direction: alternate;
+}
+@keyframes growAni{
+	from{
+		background-color: #fff;
+		transform: scale(1.0);
+	}
+	to{
+		background-color: #fff;
+		transform: scale(2.0);
+	}
+}
